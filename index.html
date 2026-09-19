@@ -7,55 +7,47 @@
 <meta name="description" content="Visual Extraordinaire">
 <meta property="og:title" content="Basement1998">
 <meta property="og:description" content="Visual Extraordinaire">
-<meta name="theme-color" content="#0a0f18">
+<meta name="theme-color" content="#0d0a0b">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=IBM+Plex+Sans:wght@300;400;500&display=swap">
 <style>
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
-html{background:#0a0f18}
-body{margin:0;background:transparent;color:#f6f5f2;font:300 17.0px/1.6 "IBM Plex Sans",Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased;text-wrap:pretty}
-.veil{position:fixed;inset:0;z-index:-1;background:rgba(0,0,0,0.32);pointer-events:none}
-a{color:#ffb10a;text-decoration:none}
-a:hover{color:#f6f5f2}
+html{background:#0d0a0b;scroll-behavior:smooth}
+body{margin:0;background:transparent;color:#f2ebe6;font:300 17px/1.6 "IBM Plex Sans",Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased;text-wrap:pretty}
+.veil{position:fixed;inset:0;z-index:-1;background:rgba(0,0,0,0.3);pointer-events:none}
+a{color:#e2574a;text-decoration:none}
+a:hover{color:#f2ebe6}
+a:focus-visible{outline:2px solid #e2574a;outline-offset:3px;border-radius:2px}
 .wrap{position:relative;max-width:1040px;margin:0 auto;padding:0 clamp(20px,5vw,44px)}
-header{position:sticky;top:0;z-index:10;padding:18px 0;
- background:linear-gradient(#0a0f18cc,#0a0f1800);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+header{position:sticky;top:0;z-index:10;padding:18px 0;background:linear-gradient(rgba(13,10,11,0.8),rgba(13,10,11,0));backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
 header .wrap{display:flex;align-items:baseline;justify-content:space-between;gap:22px;flex-wrap:wrap}
-.brand{font:400 19.0px/1 "Instrument Serif",Georgia,serif;letter-spacing:-.02em;color:#f6f5f2}
+.brand{font:400 19px/1 "Instrument Serif",Georgia,serif;letter-spacing:-.02em;color:#f2ebe6}
 nav{display:flex;gap:20px;flex-wrap:wrap}
-nav a{font-size:13.5px;color:rgba(246,245,242,.66)}
-nav a:hover{color:#f6f5f2}
+nav a{font-size:13.5px;color:rgba(242,235,230,0.66)}
+nav a:hover{color:#f2ebe6}
 .hero{display:flex;flex-direction:column;justify-content:center;min-height:78vh;padding:80px 0 70px}
-.hero .kicker{font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:rgba(246,245,242,.66)}
-.hero h1{margin:20px 0 0;font:400 clamp(38px,7.2vw,84px)/1.03 "Instrument Serif",Georgia,serif;
- letter-spacing:-.02em;white-space:pre-line}
-.hero p{margin:22px 0 0;max-width:48ch;font-size:19.0px;color:rgba(246,245,242,.66)}
-.cta{align-self:flex-start;margin-top:34px;padding:14px 28px;
- border-radius:999px;background:#ffb10a;color:#0d0d10;font-size:15.0px;font-weight:500;
- transition:transform .2s ease,filter .2s ease}
+.hero .kicker{font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:rgba(242,235,230,0.66)}
+.hero h1{margin:20px 0 0;font:400 clamp(38px,7.2vw,84px)/1.03 "Instrument Serif",Georgia,serif;letter-spacing:-.02em;white-space:pre-line}
+.hero p{margin:22px 0 0;max-width:48ch;font-size:19px;color:rgba(242,235,230,0.66)}
+.cta{align-self:flex-start;margin-top:34px;padding:14px 28px;border-radius:999px;background:#e2574a;color:#0d0d10;font-size:15px;font-weight:500;transition:transform .2s ease,filter .2s ease}
 .cta:hover{color:#0d0d10;transform:translateY(-2px);filter:brightness(1.08)}
-.sec{padding:64px 0;border-top:1px solid rgba(246,245,242,.18);display:grid;grid-template-columns:minmax(120px,.32fr) 1fr;gap:28px}
-.sec h2{margin:0;font:400 14.0px/1.3 "IBM Plex Sans",Helvetica,Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:rgba(246,245,242,.66)}
+.sec{padding:64px 0;border-top:1px solid rgba(242,235,230,0.18);display:grid;grid-template-columns:minmax(120px,.32fr) 1fr;gap:28px}
+.sec h2{margin:0;font:400 14px/1.3 "IBM Plex Sans",Helvetica,Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:rgba(242,235,230,0.66)}
 .sec .body{min-width:0}
-.sec p{margin:0 0 1em;max-width:62ch;color:rgba(246,245,242,.66)}
+.sec p{margin:0 0 1em;max-width:62ch;color:rgba(242,235,230,0.66)}
 .sec p:last-child{margin-bottom:0}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px}
-.card{display:block;padding:20px;border-radius:7px;background:rgba(10,10,12,.3);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(246,245,242,.18);color:#f6f5f2;
- transition:transform .25s cubic-bezier(.2,.8,.2,1),border-color .25s ease}
-.card:hover{transform:translateY(-3px);border-color:#ffb10a;color:#f6f5f2}
-.wt{font:400 19.0px/1.2 "Instrument Serif",Georgia,serif;letter-spacing:-.02em}
-.wm{margin-top:6px;font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:#ffb10a}
-.wd{margin:12px 0 0;font-size:14.5px;color:rgba(246,245,242,.66)}
-ul.plain{margin:0;padding:0;list-style:none;display:grid;gap:10px}
-ul.plain li{padding-bottom:10px;border-bottom:1px solid rgba(246,245,242,.18);color:rgba(246,245,242,.66);font-size:16.0px}
-ul.plain li:last-child{border-bottom:0;padding-bottom:0}
+.card{display:block;padding:20px;border-radius:7px;background:rgba(10,10,12,.3);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(242,235,230,0.18);color:#f2ebe6;transition:transform .25s cubic-bezier(.2,.8,.2,1),border-color .25s ease}
+.card:hover{transform:translateY(-3px);border-color:#e2574a;color:#f2ebe6}
+.wt{font:400 19px/1.2 "Instrument Serif",Georgia,serif;letter-spacing:-.02em}
+.wm{margin-top:6px;font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;color:#e2574a}
+.wd{margin:12px 0 0;font-size:14.5px;color:rgba(242,235,230,0.66)}
 .mail{display:inline-block;margin-top:6px;font:400 clamp(22px,3.6vw,38px)/1.1 "Instrument Serif",Georgia,serif;letter-spacing:-.02em}
 .social{margin-top:22px;display:flex;gap:16px;flex-wrap:wrap}
-.social a{font-size:13.5px;color:rgba(246,245,242,.66);border-bottom:1px solid rgba(246,245,242,.18);padding-bottom:2px}
-.social a:hover{color:#f6f5f2;border-color:#ffb10a}
-footer{padding:40px 0 56px;border-top:1px solid rgba(246,245,242,.18);font-size:12.5px;color:rgba(246,245,242,.66)}
+.social a{font-size:13.5px;color:rgba(242,235,230,0.66);border-bottom:1px solid rgba(242,235,230,0.18);padding-bottom:2px}
+.social a:hover{color:#f2ebe6;border-color:#e2574a}
+footer{padding:40px 0 56px;border-top:1px solid rgba(242,235,230,0.18);font-size:12.5px;color:rgba(242,235,230,0.66)}
 .reveal{opacity:0;transform:translateY(16px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.8,.2,1)}
 .reveal.in{opacity:1;transform:none}
 @media(max-width:720px){.sec{grid-template-columns:1fr;gap:14px}}
@@ -64,61 +56,73 @@ footer{padding:40px 0 56px;border-top:1px solid rgba(246,245,242,.18);font-size:
 </head>
 <body>
 
-<div style="position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none;background:#0a0f18">
+<div id="bgwrap" style="position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none;background:#0d0a0b">
   <canvas id="bg" style="display:block;width:100%;height:100%"></canvas>
 </div>
 <script>
-const P={"c1":"#0a0f18","c2":"#ff0000","c3":"#ff0000","p1":4.4,"speed":0.9};
-const FRAG=`precision highp float;
-uniform float uT;uniform vec2 uR;uniform vec2 uM;uniform float uS;
-uniform vec3 uA;uniform vec3 uB;uniform vec3 uC;
-uniform float uP1;uniform float uP2;uniform float uP3;
-float hash(vec2 p){return fract(sin(dot(p,vec2(127.1,311.7)))*43758.5453123);}
-float noise(vec2 p){vec2 i=floor(p),f=fract(p);f=f*f*(3.-2.*f);
- return mix(mix(hash(i),hash(i+vec2(1,0)),f.x),mix(hash(i+vec2(0,1)),hash(i+vec2(1,1)),f.x),f.y);}
-float fbm(vec2 p){float v=0.,a=.5;for(int i=0;i<5;i++){v+=a*noise(p);p*=2.03;a*=.5;}return v;}
-void main(){vec2 uv=gl_FragCoord.xy/uR.xy;vec2 st=(gl_FragCoord.xy-.5*uR)/uR.y;vec3 col=uA;
-vec2 q=st*uP1+vec2(uT*.06,uT*.02);
-float f=fbm(q+fbm(q*2.+uT*.05));
-col=mix(uA,uB,smoothstep(.25,.75,f));
-col=mix(col,uC,smoothstep(.62,.95,f)*.75);
-gl_FragColor=vec4(clamp(col,0.,1.),1.);}`;
-
-const C=document.getElementById('bg');
-const gl=C.getContext('webgl',{antialias:false,alpha:false,preserveDrawingBuffer:true,powerPreference:'low-power'});
+(function(){
+const P={"c1":"#0d0a0b","c2":"#241016","c3":"#5c1f22","p1":4.4,"speed":1.85};
+const C=document.getElementById("bg");
+const WRAP=document.getElementById("bgwrap");
+function fallback(){
+  if(C&&C.parentNode)C.parentNode.removeChild(C);
+  WRAP.style.background="radial-gradient(120% 90% at 30% 20%,"+P.c3+"33 0%,"+P.c2+" 38%,"+P.c1+" 100%)";
+}
+var gl=null;
+try{gl=C.getContext("webgl",{antialias:false,alpha:false,preserveDrawingBuffer:true,powerPreference:"low-power"})||C.getContext("experimental-webgl");}catch(e){gl=null;}
+if(!gl){fallback();return;}
+var FRAG=[
+"precision highp float;",
+"uniform float uT;uniform vec2 uR;uniform vec2 uM;uniform float uS;",
+"uniform vec3 uA;uniform vec3 uB;uniform vec3 uC;",
+"uniform float uP1;uniform float uP2;uniform float uP3;",
+"float hash(vec2 p){return fract(sin(dot(p,vec2(127.1,311.7)))*43758.5453123);}",
+"float noise(vec2 p){vec2 i=floor(p),f=fract(p);f=f*f*(3.-2.*f);",
+" return mix(mix(hash(i),hash(i+vec2(1,0)),f.x),mix(hash(i+vec2(0,1)),hash(i+vec2(1,1)),f.x),f.y);}",
+"float fbm(vec2 p){float v=0.,a=.5;for(int i=0;i<5;i++){v+=a*noise(p);p*=2.03;a*=.5;}return v;}",
+"void main(){vec2 st=(gl_FragCoord.xy-.5*uR)/uR.y;",
+"vec2 q=st*uP1+vec2(uT*.06,uT*.02);",
+"float f=fbm(q+fbm(q*2.+uT*.05));",
+"vec3 col=mix(uA,uB,smoothstep(.25,.75,f));",
+"col=mix(col,uC,smoothstep(.62,.95,f)*.75);",
+"gl_FragColor=vec4(clamp(col,0.,1.),1.);}"
+].join("\n");
 function sh(ty,src){var s=gl.createShader(ty);gl.shaderSource(s,src);gl.compileShader(s);
- if(!gl.getShaderParameter(s,gl.COMPILE_STATUS))console.error(gl.getShaderInfoLog(s));return s;}
-const pr=gl.createProgram();
-gl.attachShader(pr,sh(gl.VERTEX_SHADER,'attribute vec2 p;void main(){gl_Position=vec4(p,0.,1.);}'));
-gl.attachShader(pr,sh(gl.FRAGMENT_SHADER,FRAG));gl.linkProgram(pr);gl.useProgram(pr);
-const bf=gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,bf);
+ if(!gl.getShaderParameter(s,gl.COMPILE_STATUS)){console.error(gl.getShaderInfoLog(s));return null;}return s;}
+var vs=sh(gl.VERTEX_SHADER,"attribute vec2 p;void main(){gl_Position=vec4(p,0.,1.);}");
+var fs=sh(gl.FRAGMENT_SHADER,FRAG);
+if(!vs||!fs){fallback();return;}
+var pr=gl.createProgram();gl.attachShader(pr,vs);gl.attachShader(pr,fs);gl.linkProgram(pr);
+if(!gl.getProgramParameter(pr,gl.LINK_STATUS)){fallback();return;}
+gl.useProgram(pr);
+var bf=gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,bf);
 gl.bufferData(gl.ARRAY_BUFFER,new Float32Array([-1,-1,3,-1,-1,3]),gl.STATIC_DRAW);
-const lp=gl.getAttribLocation(pr,'p');gl.enableVertexAttribArray(lp);gl.vertexAttribPointer(lp,2,gl.FLOAT,false,0,0);
+var lp=gl.getAttribLocation(pr,"p");gl.enableVertexAttribArray(lp);gl.vertexAttribPointer(lp,2,gl.FLOAT,false,0,0);
 function U(n){return gl.getUniformLocation(pr,n);}
-const uT=U('uT'),uR=U('uR'),uM=U('uM'),uS=U('uS');
-function hx(h){h=(h||'#000').replace('#','');if(h.length===3)h=h[0]+h[0]+h[1]+h[1]+h[2]+h[2];
+var uT=U("uT"),uR=U("uR"),uM=U("uM"),uS=U("uS");
+function hx(h){h=(h||"#000").replace("#","");if(h.length===3)h=h[0]+h[0]+h[1]+h[1]+h[2]+h[2];
  return [parseInt(h.slice(0,2),16)/255,parseInt(h.slice(2,4),16)/255,parseInt(h.slice(4,6),16)/255];}
-gl.uniform3fv(U('uA'),hx(P.c1));gl.uniform3fv(U('uB'),hx(P.c2));gl.uniform3fv(U('uC'),hx(P.c3));
-gl.uniform1f(U('uP1'),P.p1||0);gl.uniform1f(U('uP2'),P.p2||0);gl.uniform1f(U('uP3'),P.p3||0);
-const DPR=Math.min(1.75,window.devicePixelRatio||1);
+gl.uniform3fv(U("uA"),hx(P.c1));gl.uniform3fv(U("uB"),hx(P.c2));gl.uniform3fv(U("uC"),hx(P.c3));
+gl.uniform1f(U("uP1"),P.p1||0);
+var DPR=Math.min(1.75,window.devicePixelRatio||1);
 function BOX(){var r=C.getBoundingClientRect();return{w:r.width||innerWidth,h:r.height||innerHeight,l:r.left,t:r.top};}
 function fit(){var b=BOX();C.width=Math.max(1,Math.floor(b.w*DPR));C.height=Math.max(1,Math.floor(b.h*DPR));
  gl.viewport(0,0,C.width,C.height);gl.uniform2f(uR,C.width,C.height);}
-addEventListener('resize',fit,{passive:true});
+addEventListener("resize",fit,{passive:true});
 if(window.ResizeObserver)new ResizeObserver(fit).observe(C);
 fit();
-const M={x:.5,y:.5,tx:.5,ty:.5,moved:false};let SC=0;
-addEventListener('pointermove',function(e){var b=BOX();M.tx=(e.clientX-b.l)/b.w;M.ty=1-(e.clientY-b.t)/b.h;M.moved=true;},{passive:true});
-addEventListener('wheel',function(e){SC=Math.min(1,Math.max(0,SC+e.deltaY/1800));},{passive:true});
-addEventListener('scroll',function(){var d=document.documentElement;SC=Math.min(1,scrollY/Math.max(1,d.scrollHeight-innerHeight));},{passive:true});
-const RM=matchMedia('(prefers-reduced-motion:reduce)').matches;
-const T0=performance.now();
+var M={x:.5,y:.5,tx:.5,ty:.5,moved:false},SC=0;
+addEventListener("pointermove",function(e){var b=BOX();M.tx=(e.clientX-b.l)/b.w;M.ty=1-(e.clientY-b.t)/b.h;M.moved=true;},{passive:true});
+addEventListener("scroll",function(){var d=document.documentElement;SC=Math.min(1,scrollY/Math.max(1,d.scrollHeight-innerHeight));},{passive:true});
+var RM=matchMedia("(prefers-reduced-motion:reduce)").matches;
+var T0=performance.now();
 function frame(now){var t=(now-T0)/1000;
  if(!M.moved){M.tx=.5+.3*Math.cos(t*.29);M.ty=.5+.22*Math.sin(t*.41);}
  M.x+=(M.tx-M.x)*.07;M.y+=(M.ty-M.y)*.07;
  gl.uniform2f(uM,M.x,M.y);gl.uniform1f(uS,SC);gl.uniform1f(uT,RM?0:t*(P.speed||1));
  gl.drawArrays(gl.TRIANGLES,0,3);if(!RM)requestAnimationFrame(frame);}
 requestAnimationFrame(frame);
+})();
 </script>
 <div class="veil"></div>
 
@@ -128,7 +132,7 @@ requestAnimationFrame(frame);
     <nav>
       <a href="#about">About</a>
       <a href="#work">Recent Work</a>
-      <a href="#contact">Say hello</a>
+      <a href="#contact">Let&#39;s talk!</a>
     </nav>
   </div>
 </header>
@@ -140,44 +144,44 @@ requestAnimationFrame(frame);
     <h1>Careful work,
 quietly made.</h1>
     <p>delve into the world of Basement1998.</p>
-    <a class="cta" href="#Work">See the work</a>
+    <a class="cta" href="#work">See the work</a>
   </div>
 
-    <section id="about" class="sec reveal">
-      <h2>About</h2>
-      <div class="body">
-        <p>Mohammed Mohsen is a talented and multi-faceted artist, specializing in intense and emotionally-driven videography and filmmaking. He started his journey during the 2020 pandemic with a canon 200D, fascinated with architecture, motorsports and unique storytelling, he went from doing photography to moody videos in instagram. With his unique eye for details, he has moved on to make videos from friends and family to big names like Puma, Red Bull, Wello, Fiba Basketball, Project RE:SESH, Saif &amp; Maryam videos on Tiktok and IG.<br></p>
-      </div>
-    </section>
+  <section id="about" class="sec reveal">
+    <h2>About</h2>
+    <div class="body">
+        <p>Mohammed Mohsen is a talented and multi-faceted artist, specializing in intense and emotionally-driven videography and filmmaking. He started his journey during the 2020 pandemic with a canon 200D, fascinated with architecture, motorsports and unique storytelling, he went from doing photography to moody videos in instagram. With his unique eye for details, he has moved on to make videos from friends and family to big names like Puma, Red Bull, Wello, Fiba Basketball, Project RE:SESH, Saif &amp; Maryam videos on Tiktok and IG.</p>
+    </div>
+  </section>
 
-    <section id="work" class="sec reveal">
-      <h2>Recent Work</h2>
-      <div class="body">
+  <section id="work" class="sec reveal">
+    <h2>Recent Work</h2>
+    <div class="body">
         <div class="grid">
-        <a class="card" href="https://www.instagram.com/p/DbUIB9UKroq/"><div class="wt">Anthony Joshua #TheComeback</div>
-          <div class="wm">Reel · 2026</div>
-          <p class="wd"></p></a>
-        <a class="card" href="https://www.instagram.com/p/DbgT_yWoA9r/"><div class="wt">Freddo Peach by Sculpture Cafe</div>
-          <div class="wm">Reels &amp; Photos · 2026</div>
-          <p class="wd"></p></a>
-        <a class="card" href="https://www.youtube.com/watch?v=HB0bvsiWUPA&amp;t=2821s"><div class="wt">RE:SESH x Jigsaw Climbing 1st Anniversary</div>
-          <div class="wm">Video · 2026</div>
-          <p class="wd"></p></a>
+        <a class="card" href="https://www.instagram.com/p/DbUIB9UKroq/" target="_blank" rel="noopener noreferrer"><div class="wt">Anthony Joshua #TheComeback</div>
+          <div class="wm">Reel · 2026</div></a>
+        <a class="card" href="https://www.instagram.com/p/DbgT_yWoA9r/" target="_blank" rel="noopener noreferrer"><div class="wt">Freddo Peach by Sculpture Cafe</div>
+          <div class="wm">Reels &amp; Photos · 2026</div></a>
+        <a class="card" href="https://www.youtube.com/watch?v=HB0bvsiWUPA&amp;t=2821s" target="_blank" rel="noopener noreferrer"><div class="wt">RE:SESH x Jigsaw Climbing 1st Anniversary</div>
+          <div class="wm">Video · 2026</div></a>
+        <a class="card" href="https://www.instagram.com/p/Dc87NVstJOs/" target="_blank" rel="noopener noreferrer"><div class="wt">Toyota/ALJ Time attack with Pistonheads Team</div>
+          <div class="wm">Reel · 2026</div></a>
+        <a class="card" href="https://www.instagram.com/p/DdHKmrstgJr/" target="_blank" rel="noopener noreferrer"><div class="wt">Toyota/ALJ Time attack with Pistonheads Team Pt2</div>
+          <div class="wm">Reel · 2026</div></a>
         </div>
-      </div>
-    </section>
+    </div>
+  </section>
 
-
-    <section id="contact" class="sec reveal">
-      <h2>Say hello</h2>
-      <div class="body">
+  <section id="contact" class="sec reveal">
+    <h2>Let&#39;s talk!</h2>
+    <div class="body">
         <p>Tell me about the project — timing, scope, and what good looks like.</p>
         <a class="mail" href="mailto:Mozethazine@gmail.com">Mozethazine@gmail.com</a>
         <div class="social">
-          <a href="https://instagram.com/basement1998">Instagram</a>
+          <a href="https://instagram.com/basement1998" target="_blank" rel="noopener noreferrer">Instagram</a>
         </div>
-      </div>
-    </section>
+    </div>
+  </section>
 
 </main>
 
@@ -185,11 +189,91 @@ quietly made.</h1>
 
 <script>
 (function(){
+  if(!("IntersectionObserver" in window)){
+    document.querySelectorAll(".reveal").forEach(function(n){n.classList.add("in");});
+    return;
+  }
   var io=new IntersectionObserver(function(es){
-    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
-  },{rootMargin:'-40px'});
-  document.querySelectorAll('.reveal').forEach(function(n){io.observe(n);});
+    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target); } });
+  },{rootMargin:"-40px"});
+  document.querySelectorAll(".reveal").forEach(function(n){io.observe(n);});
 })();
+</script>
+
+<script type="application/json" id="site-config">
+{
+  "brand": "Basement1998",
+  "title": "Basement1998 — Visual Extraordinaire",
+  "description": "Visual Extraordinaire",
+  "kicker": "Visual Extraordinaire",
+  "headline": "Careful work,\nquietly made.",
+  "sub": "delve into the world of Basement1998.",
+  "ctaLabel": "See the work",
+  "aboutHeading": "About",
+  "about": "Mohammed Mohsen is a talented and multi-faceted artist, specializing in intense and emotionally-driven videography and filmmaking. He started his journey during the 2020 pandemic with a canon 200D, fascinated with architecture, motorsports and unique storytelling, he went from doing photography to moody videos in instagram. With his unique eye for details, he has moved on to make videos from friends and family to big names like Puma, Red Bull, Wello, Fiba Basketball, Project RE:SESH, Saif & Maryam videos on Tiktok and IG.",
+  "workHeading": "Recent Work",
+  "work": [
+    {
+      "title": "Anthony Joshua #TheComeback",
+      "meta": "Reel · 2026",
+      "desc": "",
+      "url": "https://www.instagram.com/p/DbUIB9UKroq/"
+    },
+    {
+      "title": "Freddo Peach by Sculpture Cafe",
+      "meta": "Reels & Photos · 2026",
+      "desc": "",
+      "url": "https://www.instagram.com/p/DbgT_yWoA9r/"
+    },
+    {
+      "title": "RE:SESH x Jigsaw Climbing 1st Anniversary",
+      "meta": "Video · 2026",
+      "desc": "",
+      "url": "https://www.youtube.com/watch?v=HB0bvsiWUPA&t=2821s"
+    },
+    {
+      "title": "Toyota/ALJ Time attack with Pistonheads Team",
+      "meta": "Reel · 2026",
+      "desc": "",
+      "url": "https://www.instagram.com/p/Dc87NVstJOs/"
+    },
+    {
+      "title": "Toyota/ALJ Time attack with Pistonheads Team Pt2",
+      "meta": "Reel · 2026",
+      "desc": "",
+      "url": "https://www.instagram.com/p/DdHKmrstgJr/"
+    },
+    {
+      "title": "",
+      "meta": "",
+      "desc": "",
+      "url": ""
+    }
+  ],
+  "contactHeading": "Let's talk!",
+  "contactBlurb": "Tell me about the project — timing, scope, and what good looks like.",
+  "email": "Mozethazine@gmail.com",
+  "socials": [
+    {
+      "label": "Instagram",
+      "url": "https://instagram.com/basement1998"
+    }
+  ],
+  "footer": "© 2026 Basement1998. Built by hand.",
+  "theme": {
+    "base": "#0d0a0b",
+    "text": "#f2ebe6",
+    "accent": "#e2574a",
+    "veil": 0.3
+  },
+  "bg": {
+    "enabled": true,
+    "c2": "#241016",
+    "c3": "#5c1f22",
+    "scale": 4.4,
+    "speed": 1.85
+  }
+}
 </script>
 
 </body>
